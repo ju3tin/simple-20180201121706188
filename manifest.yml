@@ -1,11 +1,7 @@
 applications:
-- disk_quota: 1024M
-  host: demodra
-  name: demodra
-  buildpack: sdk-for-nodejs
-  command: node app.js
-  path: .
-  instances: 1
+- path: .
   memory: 128M
-  env:
-    DIFF_ENV: testing
+  instances: 1
+  domain: mybluemix.net
+  name: test-php
+  disk_quota: 1024M
